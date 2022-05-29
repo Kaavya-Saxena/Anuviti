@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+{% block content %}
+    <!-- 
+        - #HERO
+    -->
+
+    <section class="hero" id="home">
+        <div class="container">
+
+            <h2 class="h1 hero-title">Search</h2>
+
+        </div>
+    </section>
+
+    <!-- 
+    - #SEARCH FORM
+    -->
+
+    <section class="tour-search">
+    <div class="container">
+
+        <form method="GET" action="/search/">
+            <input type="text" name="query" style="background-color: aliceblue; height: 50px; padding:2%;" class="input-field" placeholder="Search..." />
+            <br>
+            <button type="submit" class="btn btn-secondary">
+                    Search
+            </button>
+          </div>
+        </form>
+        </div>
+    </div>
+    </section>
+
+    <!-- SECTION TO SHOW SEARCH RESULTS  -->
+
+    <section class="popular" id="popular">
+        <div class="container">
+
+        <ul class="popular-list">
+        {% for org in orgs %}
+            <li>
+            <div class="popular-card">
+
+                <figure class="card-img">
+                <img src="../static/ProfilePics/{{ org.image_file }}" alt="Image of {{ org.name }}" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                <p class="card-subtitle">
+                    <a href="mailto:{{ org.email }}">{{ org.email }}</a>
+                </p>
+
+                <h3 class="h3 card-title">
+                    <a href="#">{{ org.name }}</a>
+                </h3>
+
+                <p class="card-text">
+                    {{ org.state }}, {{ org.city }}
+                </p>
+
+                <a href="{{ org.website_link }}">
+                    <button style="font-size: small; margin-left: 0%; margin-top: 3%; padding: 10px 15px;" class="btn btn-primary">Donate</button>
+                </a>
+
+                </div>
+
+            </div>
+            </li>
+            {% endfor %}
+        </ul>
+
+        </div>
+    </section>
+
+{% endblock content %}

@@ -1,0 +1,130 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <!-- 
+        - #HERO
+    -->
+
+    <section class="hero" id="home">
+        <div class="container">
+
+            <h2 class="h1 hero-title">NGO Sign Up</h2>
+
+        </div>
+    </section>
+
+    <!-- 
+    - #ORGANIZATION REGISTRATION FORM
+    -->
+
+    <section class="tour-search">
+    <div class="container">
+       
+        <form method="POST" action="" class="tour-search-form" enctype="multipart/form-data">
+        
+            <!-- adds cross side request forgery token (CSRF) to keep our site secure  -->
+            {{ form.hidden_tag() }}
+            
+            <div class="input-wrapper">
+                {{form.org_name.label(class="input-label")}}
+                {{form.org_name(class="input-field") }}
+                <!-- If Errors Occur  -->
+                {% if form.org_name.errors %}
+                    {% for error in form.org_name.errors %}
+                        <span>{{ error }}</span>
+                        <br>
+                    {% endfor %}
+                {% endif %}
+            </div>
+            <div class="input-wrapper">
+                {{form.org_email.label(class="input-label")}}
+                {{form.org_email(class="input-field") }}
+                <!-- if errors occur  -->
+                {% if form.org_email.errors %}
+                    {% for error in form.org_email.errors %}
+                        <span>{{ error }}</span>
+                        <br>
+                    {% endfor %}
+                {% endif %}
+            </div>
+            <div class="input-wrapper">
+                {{form.org_donations.label(class="input-label")}}
+                {{form.org_donations(class="input-field") }}
+                <!-- if errors occur  -->
+                {% if form.org_donations.errors %}
+                    {% for error in form.org_donations.errors %}
+                        <span>{{ error }}</span>
+                        <br>
+                    {% endfor %}
+                {% endif %}
+            </div>
+            <div class="input-wrapper">
+                {{form.org_state.label(class="input-label")}}
+                {{form.org_state(class="input-field")}}
+                <!-- if errors occur  -->
+                {% if form.org_state.errors %}
+                    {% for error in form.org_state.errors %}
+                        <span>{{ error }}</span>
+                        <br>
+                    {% endfor %}
+                {% endif %}
+            </div>
+            <div class="input-wrapper">
+                {{form.org_city.label(class="input-label")}}
+                {{form.org_city(class="input-field")}}
+                <!-- if errors occur  -->
+                {% if form.org_city.errors %}
+                    {% for error in form.org_city.errors %}
+                        <span>{{ error }}</span>
+                        <br>
+                    {% endfor %}
+                {% endif %}
+            </div>
+            <div class="input-wrapper">
+                {{form.org_website.label(class="input-label")}}
+                {{form.org_website(class="input-field")}}
+                <!-- if errors occur  -->
+                {% if form.org_website.errors %}
+                    {% for error in form.org_website.errors %}
+                        <span>{{ error }}</span>
+                        <br>
+                    {% endfor %}
+                {% endif %}
+            </div>
+            <div class="input-wrapper">
+                {{form.org_password.label(class="input-label")}}
+                {{form.org_password(class="input-field")}}
+
+            </div>
+            <div class="input-wrapper">
+                {{form.org_confirm_password.label(class="input-label")}}
+                {{form.org_confirm_password(class="input-field")}}
+                <!-- if errors occur  -->
+                {% if form.org_confirm_password.errors %}
+                    {% for error in form.org_confirm_password.errors %}
+                        <span>{{ error }}</span>
+                        <br>
+                    {% endfor %}
+                {% endif %}
+            </div>
+            <div class="input-wrapper">
+              {{form.UserPicture.label(class="input-label")}}
+              {{form.UserPicture(class="input-field")}}
+              <!-- if errors occur  -->
+              {% if form.UserPicture.errors %}
+                {% for error in form.UserPicture.errors %}
+                  <span>{{ error }}</span>
+                  <br>
+                {% endfor %}
+              {% endif %}
+            </div>
+
+        <!-- Submit Button -->
+        {{ form.submit(class="btn btn-secondary")}}
+        
+        </form>
+    </div>
+    <br>
+
+
+{% endblock content %}

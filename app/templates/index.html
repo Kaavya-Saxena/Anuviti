@@ -1,0 +1,127 @@
+{% extends "layout.html" %}
+{% block content %}
+    <main>
+      <article>
+
+        <!-- 
+          - #HERO
+        -->
+
+        <section class="hero" id="home">
+          <div class="container">
+
+            <h2 class="h1 hero-title">Journey to explore selflessness</h2>
+
+            <p class="hero-text">
+              Paropkarah Parma Dharma, now with Anuviti you can bring a smile on faces you dont know.
+            </p>
+
+          </div>
+        </section>
+
+        <!-- 
+          - #POPULAR IN THE AREA
+        -->
+
+        <section class="popular" id="popular">
+          <div class="container">
+
+            <p class="section-subtitle">Uncover place</p>
+
+            <h2 class="h2 section-title">Discover</h2>
+
+            <p class="section-text">
+              Discover the Most Popular Non-Profit Organizations around you, trying to make an impact in the World. Be the force for Good.
+            </p>
+
+            <ul class="popular-list">
+
+              <!-- Looping through all the organizations  -->
+
+             {% for org in orgs %}
+              <li>
+                <div class="popular-card">
+
+                  <figure class="card-img">
+                    <img src="../static/ProfilePics/{{ org.org_image_file }}" alt="Image of {{ org.name }}" loading="lazy">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <p class="card-subtitle">
+                      <a href="mailto:{{ org.email }}">{{ org.email }}</a>
+                    </p>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">{{ org.name }}</a>
+                    </h3>
+
+                    <p class="card-text">
+                      {{ org.state }}, {{ org.city }}
+                    </p>
+
+                    <a href="{{ org.website_link }}">
+                      <button style="font-size: small; margin-left: 0%; margin-top: 3%; padding: 10px 15px;" class="btn btn-primary">Donate</button>
+                    </a>
+
+                  </div>
+
+                </div>
+              </li>
+              {% endfor %}
+            </ul>
+
+          </div>
+        </section>
+
+        <!-- #GALLERY -->
+
+        <section class="gallery" id="gallery">
+          <div class="container">
+
+            <p class="section-subtitle">Gallery</p>
+
+            <h2 class="h2 section-title">Photo Book</h2>
+
+            <p class="section-text">
+              Instances where Our Organizations made a REMARKABLE IMPACT by the help of our users.
+            </p>
+
+            <ul class="gallery-list">
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img src="../static/images/photoBook1.png" alt="Gallery image">
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img src="../static/images/photoBook2.png" alt="Gallery image">
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img src="../static/images/photoBook3.png" alt="Gallery image">
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img src="../static/images/PhotoBook4.png" alt="Gallery image">
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img src="../static/images/photoBook5.png" alt="Gallery image">
+                </figure>
+              </li>
+
+            </ul>
+
+          </div>
+        </section>
+
+     {% endblock content %}

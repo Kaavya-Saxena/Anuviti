@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <!-- 
+        - #HERO
+    -->
+
+    <section class="hero" id="home">
+        <div class="container">
+
+            <h2 class="h1 hero-title">User Login</h2>
+
+        </div>
+    </section>
+
+    <!-- 
+    - #LOGIN FORM 
+    -->
+
+    <section class="tour-search">
+    <div class="container">
+
+        <form method="POST" action="" class="tour-search-form">
+        
+        <!-- adds cross side request forgery token (CSRF) to keep our site secure  -->
+        {{ form.hidden_tag() }}
+        
+
+        <div class="input-wrapper">
+            {{form.email.label(class="input-label")}}
+            {{form.email(class="input-field")}}
+            <!-- if error occurs print  -->
+            {% if form.email.errors %}
+                {% for error in form.email.errors %}
+                  <span>{{ error }}</span>
+                  <br>
+                {% endfor %}
+            {% endif %}
+        </div>
+        <div class="input-wrapper">
+            {{form.password.label(class="input-label")}}
+            {{form.password(class="input-field")}}
+            <!-- if error occurs print  -->
+            {% if form.password.errors %}
+                {% for error in form.password.errors %}
+                  <span>{{ error }}</span>
+                  <br>
+                {% endfor %}
+            {% endif %}
+        </div>
+       <div class="input-wrapper">
+           {{form.remember.label(class="input-label")}}
+           {{form.remember}}
+       </div>
+
+        <!-- submit Button -->
+        {{ form.submit(class="btn btn-secondary")}}
+        
+        </form>
+    </div>
+    <br>
+    <!-- REGISTRATION LINK  -->
+    <div class="container">
+        <p style="text-align: center; font-weight: 500;"class="input-label">
+            Need an Account?
+        </p>
+        <br>
+        <a href="{{url_for('register')}}"><button class="btn btn-secondary">Sign Up Now!</button></a>
+    </div>
+    </section>
+
+{% endblock content %}
