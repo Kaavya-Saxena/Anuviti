@@ -18,7 +18,7 @@ This application aims to offer a quick and easy way to connect with different or
 
 Through the Microsoft Engage Mentorship Program 2022 under the able guidance of my mentor - Ashik Kuppili sir I was able to go from a person who just knew how to make static web pages to a person who can learn build and deploy a full stack web applications while my exams are going on.
 
-**Watch Demo** : <a href="youtube.com">Demo</a>
+**Watch Demo** : <a href="https://drive.google.com/file/d/19sp7QBBJjXO6nrE7gXq9e-2rnWbZTtX5/view?usp=sharing">Demo</a>
 
 
 
@@ -205,9 +205,7 @@ Following are the known Bugs of Web Application:-
 - After Regitering An organization Jinja may show an error sometimes while rendering index.html
 ## Demo
 
-Link to Video Demo
-https://drive.google.com/file/d/19sp7QBBJjXO6nrE7gXq9e-2rnWbZTtX5/view?usp=sharing
-
+Link to Video Demo: <a href="https://drive.google.com/file/d/19sp7QBBJjXO6nrE7gXq9e-2rnWbZTtX5/view?usp=sharing">Demo</a>
 
 
 ## Resources
