@@ -16,7 +16,7 @@ This application aims to offer a quick and easy way to connect with different or
 
 **Learnings:**
 
-Through the Microsoft Engage Mentorship Program 2022 under the able guidance of my mentor - Ashik Kuppili sir I was able to go from a person who just knew how to make static web pages to a person who can learn build and deploy a full stack web applications while my exams are going on.
+Through the Microsoft Engage Mentorship Program 2022 under the able guidance of my mentor - Mr. Ashik Kuppili I was able to go from a person who just knew how to make static web pages to a person who can learn and build a full stack web applications while my exams are going on.
 
 **Watch Demo** : <a href="https://drive.google.com/file/d/19sp7QBBJjXO6nrE7gXq9e-2rnWbZTtX5/view?usp=sharing">Demo</a>
 
