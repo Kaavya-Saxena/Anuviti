@@ -182,7 +182,7 @@ Most importantly, a good user experience in search and recommendations are almos
 During the development process I faced the following challenges:-
 
 - Understanding the working of the backend side of my application as I had never worked with web backend before. However, thanks to online communities, stackoverflow, my mentor (Ashik Kuppili) and friends I was able to find resources which helped me in creating this web application.
-- Preparing a feature list. In the beginning I wanted to build an app like no other and incorporate many features. But in the interest of time, I had to narrow down the features to the basic functionalities that are available in a video conferencing web application
+- Preparing a feature list. In the beginning I wanted to build an app like no other and incorporate many features. But in the interest of time, I had to narrow down the features to the basic functionalities that are available in a Recommendation system web application
 - Managing Development of my Project as my exams were going on. It was a challenge to jumble myself and my time between my exam preparation and application development, but due to the guidance of my mentor and discussing strategies with my friends I was able to deliver both of them in time.
 - Making my own Database as the database I required was not available, I had to make my Own database from Scratching by visiting different websites to gather data about organizations and thier details
 
