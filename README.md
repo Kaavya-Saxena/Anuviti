@@ -2,9 +2,7 @@
 
 Anuviti is an attempt to bring the concept and features to life of the robust and popular web streamings applications like Netflix and Spotify.
 
-This project was built as a part of the Microsoft Engage Program 2022 where mentees had to take up one of the three challenges/tracks, namely Face Recognition, Data Analysis and Algorithms.
-
-This project was made in an attempt to take on the 3rd challenge of researching and thinking about the algorithms that may be used in a web streaming service such as netflix and spotify to recommend different ngos to the user
+This project was made in an attempt of researching and thinking about the algorithms that may be used in a web streaming service such as netflix and spotify to recommend different ngos to the user
 
 **Motivation:** 
 
@@ -16,10 +14,7 @@ This application aims to offer a quick and easy way to connect with different or
 
 **Learnings:**
 
-Through the Microsoft Engage Mentorship Program 2022 under the able guidance of my mentor - Mr. Ashik Kuppili I was able to go from a person who just knew how to make static web pages to a person who can learn and build a full stack web applications while my exams are going on.
-
-**Watch Demo** : <a href="https://drive.google.com/file/d/19sp7QBBJjXO6nrE7gXq9e-2rnWbZTtX5/view?usp=sharing">Demo</a>
-
+I was able to go from a person who just knew how to make static web pages to a person who can learn and build a full stack web applications while my exams are going on.
 
 
 
@@ -204,8 +199,6 @@ Following are the known Bugs of Web Application:-
 - The API used to find out Location of the user Does not work Properly Sometimes. There,fore the defualt location for now is set to "Delhi"
 - After Regitering An organization Jinja may show an error sometimes while rendering index.html
 ## Demo
-
-Link to Video Demo: <a href="https://drive.google.com/file/d/19sp7QBBJjXO6nrE7gXq9e-2rnWbZTtX5/view?usp=sharing">Demo</a>
 
 
 ## Resources
